@@ -1,6 +1,5 @@
 {
   "name": "@badzz88/baileys",
-  "type": "commonjs",
   "version": "8.4.1",
   "description": "A WebSockets library for interacting with WhatsApp Web",
   "keywords": [
