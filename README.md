@@ -57,7 +57,7 @@ Send group status with version 2
 ```javascript
 await sock.sendMessage(target, {
      groupStatusMessage: {
-          text: "#BADZZNE"
+          text: "#ZYUOFFC"
      }
 });
 ```
@@ -68,8 +68,8 @@ Send multiple images in a single album message:
 ```javascript
 await sock.sendMessage(target, { 
     albumMessage: [
-        { image: cihuy, caption: "#BADZZNE" },
-        { image: { url: "URL IMAGE" }, caption: "#BADZZNE" }
+        { image: cihuy, caption: "#ZYUOFFC" },
+        { image: { url: "URL IMAGE" }, caption: "#ZYUOFFC" }
     ] 
 }, { quoted: m });
 ```
@@ -81,12 +81,12 @@ Create and send WhatsApp event invitations:
 await sock.sendMessage(target, { 
     eventMessage: { 
         isCanceled: false, 
-        name: "#BADZZNE", 
-        description: "#BADZZNE", 
+        name: "#ZYUOFFC", 
+        description: "#ZYUOFFC", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
-            name: "#BADZZNE" 
+            name: "#ZYUOFFC" 
         }, 
         joinLink: "https://call.whatsapp.com/video/badzzne2", 
         startTime: "1763019000", 
@@ -102,14 +102,14 @@ Display poll results with vote counts:
 ```javascript
 await sock.sendMessage(target, { 
     pollResultMessage: { 
-        name: "#BADZZNE", 
+        name: "#ZYUOFFC", 
         pollVotes: [
             {
-                optionName: "#BADZZNE",
+                optionName: "#ZYUOFFC",
                 optionVoteCount: "112233"
             },
             {
-                optionName: "#BADZZNE",
+                optionName: "#ZYUOFFC",
                 optionVoteCount: "1"
             }
         ] 
@@ -123,9 +123,9 @@ Send basic interactive messages with copy button functionality:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#BADZZNE",
-        title: "#BADZZNE",
-        footer: "telegram: @badzzne2 ",
+        header: "#ZYUOFFC",
+        title: "#ZYUOFFC",
+        footer: "telegram: @ZyuuOffc ",
         buttons: [
             {
                 name: "cta_copy",
@@ -146,28 +146,29 @@ Send interactive messages with buttons, copy actions, and native flow features:
 ```javascript
 await sock.sendMessage(target, {    
     interactiveMessage: {      
-        header: "#BADZZNE",
-        title: "#BADZZNE",      
-        footer: "telegram: @badzzne2",      
+        header: "#ZYUOFFC",
+        title: "#ZYUOFFC",      
+        footer: "telegram: @ZyuuOffc
+",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "https://t.me/badzzne2",            
-                    copy_code: "#BADZZNE",            
+                    url: "https://t.me/ZyuuOffc",            
+                    copy_code: "#ZYUOFFC",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "#BADZZNE",            
-                    button_title: "#BADZZNE"          
+                    list_title: "#ZYUOFFC",            
+                    button_title: "#ZYUOFFC"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/badzzne2",            
+                    canonical_url: "https://t.me/ZyuuOffc",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -188,14 +189,14 @@ await sock.sendMessage(target, {
                 {            
                     name: "single_select",            
                     buttonParamsJson: JSON.stringify({              
-                        title: "#BADZZNE",              
+                        title: "#ZYUOFFC",              
                         sections: [                
                             {                  
                                 title: "title",                  
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@badzzne2",                      
+                                        title: "@ZyuuOffc",                      
                                         description: "love you",                      
                                         id: "row_2"                    
                                     }                  
@@ -225,9 +226,9 @@ Send interactive messages with thumbnail image and copy button:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#BADZZNE",
-        title: "#BADZZNE",
-        footer: "telegram: @badzzne2",
+        header: "#ZYUOFFC",
+        title: "#ZYUOFFC",
+        footer: "telegram: @ZyuuOffc",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -278,9 +279,9 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#BADZZNE",
-        title: "#BADZZNE",
-        footer: "telegram: @badzzne2",
+        header: "#ZYUOFFC",
+        title: "#ZYUOFFC",
+        footer: "telegram: @ZyuuOffc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
         fileName: "badzzne2.pdf",
@@ -291,12 +292,12 @@ await sock.sendMessage(target, {
             isForwarded: false
         },
         externalAdReply: {
-            title: "#BADZZNE",
-            body: "#BADZZNE",
+            title: "#ZYUOFFC",
+            body: "#ZYUOFFC",
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/badzzne2",
+            sourceUrl: "https://t.me/ZyuuOffc",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -305,8 +306,8 @@ await sock.sendMessage(target, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/badzzne2",
-                    merchant_url: "https://t.me/badzzne2"
+                    url: "https://t.me/ZyuuOffc",
+                    merchant_url: "https://t.me/ZyuuOffc"
                 })
             }
         ]
@@ -322,7 +323,7 @@ await sock.sendMessage(target, {
     interactiveMessage: {
         header: "#BADZZNE",
         title: "#BADZZNE",
-        footer: "telegram: @badzzne2",
+        footer: "telegram: @ZyuuOffc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
         fileName: "badzzne2.pdf",
@@ -332,8 +333,8 @@ await sock.sendMessage(target, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/badzzne2",
-                    merchant_url: "https://t.me/badzzne2"
+                    url: "https://t.me/ZyuuOffc",
+                    merchant_url: "https://t.me/ZyuuOffc"
                 })
             }
         ]
