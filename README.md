@@ -1,4 +1,4 @@
-# WhatsApp Baileys Badzz
+# WhatsApp Baileys Zyuu
 
 <p align="center">
   <img src="https://b.top4top.io/p_3816tx02l1.jpg" alt="Thumbnail" />
